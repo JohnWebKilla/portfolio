@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #060a24;
+}
+
+.eyes {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.eye {
+  width: 240px;
+  height: 120px;
+  background: #fff;
+  display: inline-block;
+  margin: 40px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.ball {
+  width: 80px;
+  height: 80px;
+  background: rgb(36, 187, 207);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.scar {
+  top: -80%;
+  left: 65%;
+  position: absolute;
+  z-index: 6;
+}

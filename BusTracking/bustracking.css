@@ -1,0 +1,62 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+body { 
+  margin: 0; 
+  padding: 0; 
+}
+
+#map { 
+  position: absolute; 
+  top: 80px; 
+  bottom: 0; 
+  width: 100%; 
+}
+
+.map-overlay{
+  position: absolute;
+  left: 0;
+  padding: 10px;
+}
+
+
+.marker {
+  background-image: url('busIcon.png');
+  background-size: cover;
+  width: 40px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.headlineBox {
+  display: flex;
+  background-color: #010222;
+  border-style: groove;
+  border-width: 2px;
+  border-color: black;
+  height: 75px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: #ffffff;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  .headlineBox {
+    height: 50px;
+  }
+
+  #map {
+    top: 55px;
+  }
+}
